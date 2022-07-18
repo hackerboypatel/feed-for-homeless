@@ -1,0 +1,74 @@
+{% extends "food_mgt/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+<link rel="stylesheet" href="{% static 'food_mgt/style.css' %}" />
+    <div class="content content-section">
+        <h2>Log in to Request or Donate.....</h2>
+        <br><br>
+        <p>Need an Volunteer/Doner Account? &nbsp;&nbsp;&nbsp;
+            <a href="{% url 'register' %}">Register</a>
+        </p>
+    </div>
+    
+    
+    
+             <br><br><br><br><br><br>
+             
+             
+    <div class="figure">
+   	<img src="/media/default.jpg"
+       	alt="image by deepak"
+       	
+       	width="800"
+       	height="341">
+
+  <h1>Donate Food,Save Life</h1>
+    </div>
+
+    
+</div>
+
+
+ <footer id="footer">
+ 
+     
+        <div class="company-details">
+            <div class="row">
+                <div id="col1">
+                    <span id="icon" class="fa fa-map-marker"></span>
+ 
+                    <span>
+                    710-B, Advant Navis Business Park,
+                    <br />Sector-142, Noida
+                </span>
+                </div>
+ <link rel="stylesheet" href="{% static 'food_mgt/style.css' %}" />
+                <div id="col2">
+                    <span id="icon" class="fa fa-phone"></span>
+ 
+                    <span>
+                    Mobile_No.: +91 8349646551     <br>
+                </span>
+                </div>
+ 			<br>
+                <div id="col3">
+                    <span id="icon" class="fa fa-envelope"></span>
+                    <span>patidarj835@gmail.com   </span>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- Copyright Section -->
+        <div class="copyright">
+             
+ 
+<p>© All rights reserved | jitendra patel</p>
+ 
+ 
+ 
+            
+        </div>
+    </footer>
+
+{% endblock content %}
