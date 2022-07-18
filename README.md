@@ -1,2 +1,2 @@
 # feed-for-homeless
-an food donation platform made with Dijango
+an food donation platform made with Dijango backend
