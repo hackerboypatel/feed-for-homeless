@@ -92,7 +92,9 @@ class PostDetailView(DetailView):
 class PostCreateView(LoginRequiredMixin,CreateView):
     # The CreateView page displayed to a GET request uses a template_name_suffix of '_form'
     model = Post
-    fields = ['title', 'content','contact_name','contact_number','date','state','city','image']
+    fields = ['title', 'content','contact_name','contact_number','date'	,'state','city','image']
+    
+
 
     def form_valid(self,form):   # when used this function it fills the author instance of the form and retunrs the valid data and django saves it
                                  # we should only use form_valid as the name of the function 
@@ -103,6 +105,8 @@ class PostCreateView(LoginRequiredMixin,CreateView):
 class PostUpdateView(LoginRequiredMixin,UserPassesTestMixin,UpdateView):
     model = Post
     fields = ['title', 'content','contact_name','contact_number','state','city','image','status']
+    
+   
 
     def form_valid(self,form):
         form.instance.author = self.request.user

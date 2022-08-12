@@ -16,59 +16,88 @@
              <br><br><br><br><br><br>
              
              
+   
+             
+             
     <div class="figure">
-   	<img src="/media/default.jpg"
+        
+   	<img src="/media/image.jpeg"
        	alt="image by deepak"
        	
-       	width="800"
-       	height="341">
+       	width="1100px"
+       	height="480">
 
-  <h1>Donate Food,Save Life</h1>
+<h1 align="center"><i> Donate Food,Save Life</i></h1>
+
     </div>
 
-    
+   
+
+
+<div class="footer">
+<link rel="stylesheet" href="{% static 'food_mgt/style.css' %}" />
+ 
+           
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark text-white pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row ">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Contact Us</h5>
+        <p>{% load static %}<img width="30" height="30" src="{% static "img/location.png" %} "> MITM Ujjain</p>
+        <p>{% load static %}<img width="38" height="34" src="{% static "img/phone4.png" %} ">+91 8349646551 </p>
+        <p>{% load static %}<img width="30" height="30" src="{% static "img/email.png" %} ">&nbsp;&nbsp;&nbsp;Patidarj835@gmail.com</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Social media</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank">{% load static %}<img width="30" height="30" src="{% static "img/linkedin2.png" %} "></a>
+            <a href="https://github.com/hackerboypatel/" rel="noopener noreferrer" target="_blank">{% load static %}<img width="31" height="34" src="{% static "img/github.png" %} "></a>
+            <a href="https://www.facebook.com" rel="noopener noreferrer" target="_blank">{% load static %}<img width="30" height="30" src="{% static "img/facebook.png" %} "></a>
+            <a href="https://www.instagram.com" rel="noopener noreferrer" target="_blank">{% load static %}<img width="38" height="39" src="{% static "img/instagram.png" %} "></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
 </div>
+  <!-- Footer Links -->
 
+  <!-- Copyright -->
+  <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div> -->
+  <!-- Copyright -->
 
- <footer id="footer">
- 
-     
-        <div class="company-details">
-            <div class="row">
-                <div id="col1">
-                    <span id="icon" class="fa fa-map-marker"></span>
- 
-                    <span>
-                    710-B, Advant Navis Business Park,
-                    <br />Sector-142, Noida
-                </span>
-                </div>
- <link rel="stylesheet" href="{% static 'food_mgt/style.css' %}" />
-                <div id="col2">
-                    <span id="icon" class="fa fa-phone"></span>
- 
-                    <span>
-                    Mobile_No.: +91 8349646551     <br>
-                </span>
-                </div>
- 			<br>
-                <div id="col3">
-                    <span id="icon" class="fa fa-envelope"></span>
-                    <span>patidarj835@gmail.com   </span>
-                </div>
-            </div>
-        </div>
- 
-        <!-- Copyright Section -->
-        <div class="copyright">
-             
- 
-<p>© All rights reserved | jitendra patel</p>
- 
- 
- 
-            
-        </div>
-    </footer>
-
+</footer>
+<!-- Footer -->
+</div>
+</div>
 {% endblock content %}
