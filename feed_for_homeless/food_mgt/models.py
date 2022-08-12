@@ -39,25 +39,7 @@ def validate_name(value):
  
 
 
-def city_chose(value):
-    #string = "jistendarpatidar1"
-    city_chose = (("Andhra Pradesh","Andhra Pradesh"),("Arunachal Pradesh ","Arunachal Pradesh "),("Assam","Assam"),("Bihar","Bihar"))
-    if value == ("Madhya Pradesh","Madhya Pradesh"):
-    	return city_chose
-    else :
-    	return value
-'''
-    if all(x.isalpha() or x.isspace() for x in value):
-        s1 = "yes"
-    else:
-        s1 = "no"
 
-    if s1 == "yes":
-        return value
-    else:
-        raise ValidationError("Enter a valid name")
- '''
-# Register your models here.
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
